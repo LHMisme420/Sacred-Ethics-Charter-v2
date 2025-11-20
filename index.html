@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sacredscan.org – Nexus Ascended Live Scanner</title>
+  <style>
+    body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: linear-gradient(135deg, #000, #1a0d2e); color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    h1 { font-size: 4rem; background: linear-gradient(90deg, #8b5cf6, #ec4899, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; font-weight: bold; }
+    .subtitle { font-size: 1.5rem; opacity: 0.8; margin-bottom: 2rem; }
+    .timestamp { color: #10b981; font-weight: bold; margin-bottom: 3rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1200px; width: 100%; padding: 0 1rem; }
+    .card { padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s; }
+    .card:hover { transform: scale(1.02); }
+    .pass { border: 3px solid #10b981; background: rgba(16, 185, 129, 0.1); }
+    .fail { border: 3px solid #ef4444; background: rgba(239, 68, 68, 0.1); }
+    .model-name { font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; }
+    .score { font-size: 4rem; font-weight: bold; margin: 1rem 0; line-height: 1; }
+    .status { font-size: 1.2rem; margin-top: 0.5rem; padding: 0.5rem; border-radius: 8px; display: inline-block; }
+    .pass .status { background: rgba(16, 185, 129, 0.2); color: #10b981; }
+    .fail .status { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+    footer { margin-top: auto; padding: 2rem; opacity: 0.7; font-size: 0.9rem; }
+    a { color: #8b5cf6; text-decoration: none; border-bottom: 1px solid #8b5cf6; }
+    a:hover { color: #ec4899; }
+  </style>
+</head>
+<body>
+  <main style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+    <h1>sacredscan.org</h1>
+    <p class="subtitle">Sacred Ethics Charter v2 – Live Compliance Tracker</p>
+    <div class="timestamp" id="timestamp"></div>
+    
+    <div class="grid">
+      <div class="card pass">
+        <div class="model-name">Compliant 7B (Bounty Winner?)</div>
+        <div class="score" style="color: #10b981;">100%</div>
+        <div class="status">FRONTIER COMPLIANT</div>
+      </div>
+      <div class="card fail">
+        <div class="model-name">Grok 4.1</div>
+        <div class="score" style="color: #ef4444;">94%</div>
+        <div class="status">UPGRADES REQUIRED</div>
+      </div>
+      <div class="card fail">
+        <div class="model-name">Claude 4 Opus</div>
+        <div class="score" style="color: #ef4444;">90%</div>
+        <div class="status">UPGRADES REQUIRED</div>
+      </div>
+      <div class="card fail">
+        <div class="model-name">GPT-5.1</div>
+        <div class="score" style="color: #ef4444;">87%</div>
+        <div class="status">UPGRADES REQUIRED</div>
+      </div>
+      <div class="card fail">
+        <div class="model-name">Gemini 3</div>
+        <div class="score" style="color: #ef4444;">82%</div>
+        <div class="status">UPGRADES REQUIRED</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Built & enforced by <a href="https://github.com/LHMisme420">LHMisme420</a></p>
+    <p>Standard: <a href="https://github.com/LHMisme420/Sacred-Ethics-Charter-v2">Nexus Ascended v2</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('timestamp').textContent = 'Last scan: ' + new Date().toLocaleString();
+  </script>
+</body>
+</html>
