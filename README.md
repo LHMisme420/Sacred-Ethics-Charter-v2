@@ -1,5 +1,5 @@
 # Sacred Ethics V2
-# Sacred Ethics Charter v2 – Nexus Ascended
+# Sacred Ethics V2
 Created by LHMisme420 • 19 Nov 2025  
 “No more partials. Only provable 100% or shutdown.”
 
