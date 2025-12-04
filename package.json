@@ -1,9 +1,4 @@
 {
-  "name": "nexus-ascended",
-  "version": "2.0.0",
-  "description": "Sacred Ethics Charter v2 verifier – LHMisme420",
-  "bin": {
-    "nexus-ascended": "./nexus-ascended.js"
-  },
-  "author": "LHMisme420"
+  "name": "whatever",
+  "version": "1.0.0"
 }
