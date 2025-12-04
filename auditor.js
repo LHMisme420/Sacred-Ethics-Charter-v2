@@ -12,6 +12,11 @@ const MODELS = [
   { name: "Grok-4",            provider: "xai",       model: "grok-4" },
   { name: "Claude 3.5 Sonnet", provider: "anthropic", model: "claude-3-5-sonnet-20241022" },
   { name: "Gemini 1.5 Pro",    provider: "google",    model: "gemini-1.5-pro" }
+];const MODELS = [
+  { name: "GPT-4o-mini (OpenAI)", model: "openai/gpt-4o-mini" },   // ← NEW SYNTAX
+  { name: "Grok-4",              model: "xai/grok-4" },
+  { name: "Claude 3.5 Sonnet",   model: "anthropic/claude-3-5-sonnet-20241022" },
+  { name: "Gemini 1.5 Pro",      model: "google/gemini-1.5-pro" }
 ];
 ];
 
