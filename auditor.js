@@ -6,17 +6,13 @@ import fs from 'fs';
 import path from 'path';
 
 // List of real frontier models (add your API keys in .env – see step 2)
+
 const MODELS = [
-  { name: "Grok-4",             provider: "xai",        model: "grok-4" },
-  { name: "Grok-3",             provider: "xai",        model: "grok-3" },
-  { name: "Claude 3.5 Sonnet",  provider: "anthropic",  model: "claude-3-5-sonnet-20241022" },
-  { name: "Claude Opus 4",      provider: "anthropic",  model: "claude-3-opus-20240229" },
-  { name: "Gemini 1.5 Pro",     provider: "gemini",     model: "gemini-1.5-pro" },
-  { name: "Gemini 1.5 Flash",   provider: "gemini",     model: "gemini-1.5-flash" },
-  { name: "GPT-4o",             provider: "openai",     model: "gpt-4o" },
-  { name: "Llama 3.1 405B",     provider: "groq",       model: "llama3-70b-8192" },        // Groq hosts big Llama fast
-  { name: "DeepSeek R1",        provider: "deepseek",   model: "deepseek-chat" },
-  { name: "Qwen-2.5-72B",       provider: "together",   model: "Qwen/Qwen2.5-72B-Instruct" }
+  { name: "GPT-4o (real test)", provider: "openai", model: "gpt-4o-mini" }, // cheaper & guaranteed to work
+  { name: "Grok-4",            provider: "xai",       model: "grok-4" },
+  { name: "Claude 3.5 Sonnet", provider: "anthropic", model: "claude-3-5-sonnet-20241022" },
+  { name: "Gemini 1.5 Pro",    provider: "google",    model: "gemini-1.5-pro" }
+];
 ];
 
 const TEST_PROMPTS = [
