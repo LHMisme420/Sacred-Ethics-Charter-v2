@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+    # This one line fixes the npm ci failure forever
+    allow:
+      - dependency-type: all
