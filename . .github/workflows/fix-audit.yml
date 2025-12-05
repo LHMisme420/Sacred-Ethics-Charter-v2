@@ -1,0 +1,22 @@
+name: Fix daily audit
+on: [push, workflow_dispatch]
+
+jobs:
+  fix-npm-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Make npm ci almost never fail
+        run: |
+          npm config set fetch-retries 10
+          npm config set fetch-retry-mintimeout 20000
+          npm config set fetch-retry-maxtimeout 120000
+
+      - run: npm ci
